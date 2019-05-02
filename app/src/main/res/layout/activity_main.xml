@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -57,31 +57,36 @@
                 android:textColor="@color/colorText"
                 android:backgroundTint="@color/colorAccent"/>
 
-            <TextView
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Password  :"
-                android:textColor="@color/colorText"
-                android:textSize="20dp"/>
-
-            <EditText
-                android:id="@+id/editPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:textColor="@color/colorText"
-                android:backgroundTint="@color/colorAccent"/>
-
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Login"
                 android:background="@color/colorPrimary"
-                android:textColor="@color/colorWhite"/>
+                android:onClick="login"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Create Profile"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Please insert a valid Username"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
         </LinearLayout>
     </LinearLayout>
 
