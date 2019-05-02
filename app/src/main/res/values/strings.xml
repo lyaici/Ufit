@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Ufit</string>
+    <string name="title_activity_user_consumption">UserConsumption</string>
+    <string name="tab_text_1">Scans</string>
+    <string name="tab_text_2">Calories</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
